@@ -50,7 +50,7 @@ body {
       width: 200px;
   }
 
-/* My tasks */
+/* My tasks -------------------------*/
 nav ul{
     display: flex;
     justify-content: space-between;
@@ -61,10 +61,40 @@ article img{
 }
 main{
     column-count: 2;
+    column-gap: 2rem;
+    column-width: 100%;
+}
+main article{
+    column-width: 60%;
 }
 main aside {
+    column-width: 40%;
     break-inside: avoid;
     page-break-inside: avoid;
-
-    column-gap: 2rem;
+    /* To stop content overflow from previous element */
+    break-before: column; 
+}
+.photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "pic1 pic2"
+    "pic3 pic4"
+    "pic5 .";
+    gap: 1px;
+}
+.photos li:nth-child(1){
+    grid-area: pic1;
+}
+.photos li:nth-child(2){
+    grid-area: pic2;
+}
+.photos li:nth-child(3){
+    grid-area: pic3;
+}
+.photos li:nth-child(4){
+    grid-area: pic4;
+}
+.photos li:nth-child(5){
+    grid-area: pic5;
 }
