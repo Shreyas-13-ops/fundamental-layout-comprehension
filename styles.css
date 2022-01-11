@@ -49,8 +49,13 @@ body {
   .feature {
       width: 200px;
   }
+
 /* My tasks */
 nav ul{
     display: flex;
     justify-content: space-between;
+}
+img{
+    float: left;
+    margin-right: 1rem;
 }
