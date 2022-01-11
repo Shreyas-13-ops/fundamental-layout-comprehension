@@ -64,11 +64,9 @@ article img{
     margin-right: 1rem;
 }
 main{
-    column-count: 2;
-    column-gap: 2rem;
-
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 20px;
 }
 main article{
 /* code */
@@ -102,4 +100,21 @@ main aside {
 }
 .photos li:nth-child(5){
     grid-area: pic5;
+}
+
+/* Media queries for Tablet & below viewport screens */
+@media screen and (max-width: 768){
+    #grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "article"
+        "aside";
+    }
+    article{
+        grid-area: article;
+    }
+    aside{
+        grid-area: aside;
+    }
 }
