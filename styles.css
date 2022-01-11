@@ -49,3 +49,8 @@ body {
   .feature {
       width: 200px;
   }
+/* My tasks */
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
