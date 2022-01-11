@@ -55,7 +55,16 @@ nav ul{
     display: flex;
     justify-content: space-between;
 }
-img{
+article img{
     float: left;
     margin-right: 1rem;
+}
+main{
+    column-count: 2;
+}
+main aside {
+    break-inside: avoid;
+    page-break-inside: avoid;
+
+    column-gap: 2rem;
 }
