@@ -51,6 +51,10 @@ body {
   }
 
 /* My tasks -------------------------*/
+nav{
+    position: sticky;
+    top:0;
+}
 nav ul{
     display: flex;
     justify-content: space-between;
